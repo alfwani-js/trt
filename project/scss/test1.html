@@ -1,0 +1,694 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>security test</title>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/material-design-icons/3.0.1/iconfont/material-icons.min.css"
+      integrity="sha256-x8PYmLKD83R9T/sYmJn1j3is/chhJdySyhet/JuHnfY="
+      crossorigin="anonymous"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/tailwindcss/1.4.0/tailwind.min.css"
+      integrity="sha256-CAI/7ThhltsmP2L2zKBYa7FknB3ZwFbD0nqL8FCdxdc="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="css/style.css" />
+    <link rel="stylesheet" href="css/style2.css" />
+    
+</head>
+<body>
+     <!-- header -->
+     <nav class="flex items-center bg-gray-800 p-3 flex-wrap">
+        <a href="index.html" class="p-2 mr-4 inline-flex items-center">
+          <svg
+            viewBox="0 0 24 24"
+            xmlns="http://www.w3.org/2000/svg"
+            class="fill-current text-white h-8 w-8 mr-2"
+          >
+            <path
+              d="M12.001 4.8c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624C13.666 10.618 15.027 12 18.001 12c3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C16.337 6.182 14.976 4.8 12.001 4.8zm-6 7.2c-3.2 0-5.2 1.6-6 4.8 1.2-1.6 2.6-2.2 4.2-1.8.913.228 1.565.89 2.288 1.624 1.177 1.194 2.538 2.576 5.512 2.576 3.2 0 5.2-1.6 6-4.8-1.2 1.6-2.6 2.2-4.2 1.8-.913-.228-1.565-.89-2.288-1.624C10.337 13.382 8.976 12 6.001 12z"
+            />
+          </svg>
+          <span class="text-xl text-white font-bold uppercase tracking-wide"
+            >scratch and script</span
+          >
+        </a>
+        <button
+          class="text-white inline-flex p-3 hover:bg-gray-900 rounded lg:hidden ml-auto hover:text-white outline-none nav-toggler"
+          data-target="#navigation"
+        >
+          <i class="material-icons">take test</i>
+        </button>
+        <div
+          class="hidden top-navbar w-full lg:inline-flex lg:flex-grow lg:w-auto"
+          id="navigation"
+        >
+          <div
+            class="lg:inline-flex lg:flex-row lg:ml-auto lg:w-auto w-full lg:items-center items-start flex flex-col lg:h-auto"
+          >
+            <a
+              href="index.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Home</span>
+            </a>
+            <a
+              href="test1.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Test 1</span>
+            </a>
+            <a
+              href="test2.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Test 2</span>
+            </a>
+            <a
+              href="login.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>login</span>
+            </a>
+            <a
+              href="result.html"
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Get results</span>
+            </a>
+            <a
+              href=""
+              class="lg:inline-flex lg:w-auto w-full px-3 py-2 rounded text-gray-400 items-center justify-center hover:bg-gray-900 hover:text-white"
+            >
+              <span>Contact Us</span>
+            </a>
+          </div>
+        </div>
+      </nav>
+      <!--scroll bar-->
+      <div class="scroller">
+        <h2>Scroll Indicator</h2>
+        <div class="progress-container">
+          <div class="progress-bar" id="myBar"></div>
+        </div>
+      </div>
+      <!-- questions -->
+      <form action="/action_page.php">
+        <div id="one">
+        <p>We conduct automated decision making with legal or similar significant effect that includes the use of profiling or algorithmic means or use of sensitive personal data as an element to determine access to services or that results in legal or similarly significant effects;:</p>
+        <a href="#two">
+        <input type="radio" id="html" name="fav_language" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fav_language" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fav_language" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        </a>
+      <hr/>
+      </div>
+      <div id="two">
+        <p><br/>
+           <br/>
+          We use of personal data on a large-scale for a purpose other than that for which the data was initially collected;:</p>
+        <a href="#three">
+        <input type="radio" id="html" name="second" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="second" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="second" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+    </a>
+      <hr/>
+      </div>
+      <div id="three">
+        <p>
+          <br/>
+           <br/>
+          We have made some changes in our internal processing that may result in higher risk to data subjects:</p>
+        <a href="#four"> 
+        <input type="radio" id="html" name="Third" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="Third" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="Third" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="four">
+
+        <p>
+          <br/>
+           <br/>
+          We process sensitive personal data or data relating to children or vulnerable groups:</p>
+        <a href="#five"> 
+        <input type="radio" id="html" name="fourth" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fourth" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="Fourth" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a><hr/>
+      </div>
+      <div id="five">
+        <p>
+          <br/>
+           <br/>        
+          
+          We conduct large scale processing of personal data:</p>
+        <a href="#six">
+        <input type="radio" id="html" name="fifth" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="fifth" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="fifth" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+       </a>
+      <hr/>
+      </div>
+      <div id="six">
+        <p>
+          <br/>
+          <br/>
+          We combine, link or cross-reference datasets from different sources and process these for new/different purposes;</p>
+        <a href="#seven">
+        <input type="radio" id="html" name="sixth" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="sixth" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="sixth" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      <hr/>
+      </div>
+      <div id="seven">
+
+        <p>
+          <br/>
+          <br/>
+          We have adopted innovative use or application of new technological or organizational solutions:</p>
+          <a href="#eight">
+        <input type="radio" id="html" name="seventh" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seventh" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seventh" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+      </div>
+      <div id="eight">
+        <p> 
+          <br/>
+          <br/>
+          We conduct large scale processing of personal data:</p>
+          <a href="#nine">
+        <input type="radio" id="html" name="eighth" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="eighth" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="eighth" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="nine">
+
+        <p>
+          <br/>
+          <br/>
+          We perform systematic monitoring of publicly accessible areas on a large scale:</p>
+          <a href="#ten">
+        <input type="radio" id="html" name="ninth" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="ninth" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="ninth" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="ten">
+
+        <p>
+          <br/>
+          <br/>
+          We have adopted innovative use or application of new technological or organizational solutions:</p>
+        <a href="#eleven">
+        <input type="radio" id="html" name="tenth" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="tenth" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="tenth" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="eleven">
+        <p>
+          <br/>
+          <br/>
+          Our processing activities could prevent a data subject from exercising a right:</p>
+        <a href="#twelve">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="twelve">
+        <p>
+          <br/>
+          <br/>
+          We process details around salary, fee, commission, bonus, gratuity, allowance or other remuneration paid or payable to the data subject by any person:</p>
+        <a href="#thirteen">  
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="thirteen">
+        <p>
+          <br/>
+          <br/>
+          We process details around income that a data subject receives from the sale of any goods or property:</p>
+        <a href="#fourteen">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      </a>
+      <hr/>
+
+      </div>
+      <div id="fourteen">
+        <p>
+          <br/>
+          <br/>
+          We process credit card, charge card or debit card data issued to or in the name of the data subject.</p>
+          <a href="#fifteen">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="fifteen">
+        <p>
+          <br/>
+          <br/>
+          We process account numbers a data subject has with any entity that is a bank or finance company.</p>
+          <a href="#sixteen">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+          </a>
+      <hr/>
+
+      </div>
+      <div id="sixteen">
+        <p>
+          <br/>
+          <br/>
+          We process information that identifies, or is likely to lead to the identification of a child in conflict with the law or in need of care and protection.</p>
+        <a href="#seventeen">  
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="seventeen">
+        <p>
+          <br/>
+          <br/>
+           We process private key of or relating to a data subject that is used or may be used <br/>
+          - to create a secure electronic record or secure electronic signature;<br/>
+          - to verify the integrity of a secure electronic record; <br/>
+          - to verify the authenticity or integrity of a secure electronic signature<br/>
+          </p>
+          <a href="#eighteen">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+       </a>
+      <hr/>
+
+      </div>
+      <div id="eighteen">
+
+        <p>
+          <br/>
+          <br/>
+          
+          We process data about the net worth or creditworthiness of a data subject.</p>
+        <a href="#nineteen">  
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+       </a>
+      <hr/>
+
+      </div>
+      <div id="nineteen">
+        <p>
+          <br/>
+          <br/>
+          We process data about deposit or withdraw of monies by a data subject with any entity.</p>
+        <a href="#twenty"  >
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="#twenty">
+        <p><br/><br/>We process data about withdrawal of moneys deposited by individual any entity or a payment system.</p>
+        <a href="#twentyone">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="twentyone">
+        
+        <p>
+          <br/>
+          <br/>
+          We process data bout the granting by a person of advances, loans and other facilities by which the data subject, being a customer of the entity, has access to funds or financial guarantees. </p>
+        <a href="#twentytwo"> 
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+        </a>
+      <hr/>
+
+      </div>
+      <div id="twentytwo">
+
+        <p>
+          <br/>
+          <br/>
+          The existence, and amount due or outstanding, of any debt <br/>
+          - owed by the data subject to an entity; <br/>
+          - owed by an entity to the data subject.<br/>
+           </p>
+           <a href ="#twentythree">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      <hr/>
+
+      </div>
+      <div id="twentythree">
+        <p>
+          <br/>
+          <br/>
+          The incurring by the entity of any liabilities on behalf of the data subject. </p>
+          <a href="#24">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="24">
+        <p><br/><br/>The payment of any moneys, or transfer of any property, by any person to the individual, including the amount of the moneys paid or the value of the property transferred, as the case may be. </p>
+        <a href="#25">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="25">
+        
+        <p><br/><br/>The data subject’s investment in any capital markets products. </p>
+        <a href="#26">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="26">
+        <p><br/><br/>Any term and condition, premium or benefits payable, or any detail relating to the condition of health, from an accident, health, or life policy of which the data subject is the policy owner or a beneficiary. </p>
+        <a href="#27">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="27">
+        <p><br/><br/>The assessment, diagnosis, treatment, prevention or alleviation by a health professional of any of the following affecting the data subject <br/>
+          - any sexually‑transmitted diseases<br/>
+          -  Human Immunodeficiency Virus Infection;<br/>
+          - mental disorder;<br/>
+          - substance abuse and addiction.<br/>
+           </p>
+           <a href="#28">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="28">
+        <p><br/><br/>The provision of treatment to the individual for or in respect of <br/>
+          - the donation or receipt of a human egg or human sperm <br/>
+          - any contraceptive operation or procedure or abortion<br/>
+           </p>
+           <a href="#29">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="29">
+        <p><br/><br/>Any of the following <br/>
+          - the donation and removal of any organ from the body of the deceased individual for the purpose of its transplantation into the body of another individual <br/>
+          - the donation and removal of any specified organ from the individual, being a living organ donor, for the purpose of its transplantation into the body of another individual<br/>
+          - the transplantation of any organ mentioned in paragraph (a) or (b) into the body of the individual<br/>
+           </p>
+           <a href="#30">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+
+      <div id="30">
+        <p><br/><br/>The suicide or attempted suicide of the individual. </p>
+        <a href="#31">
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label></a>
+      <hr/>
+
+      </div>
+      <div id="31">
+        <p>Any of the following<br/>
+          - information that the individual is or had been adopted the identity of the natural father or mother of the data subject<br/>
+          - the identity of the adoptive father or mother of the subject<br/>
+          - the identity of any applicant for an adoption order<br/>
+          - the identity of any person whose consent is necessary under that Act for an adoption order to be made, whether or not the court has dispensed with the consent of that person in accordance with that Act.<br/>
+           </p>
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      <hr/>
+
+      </div>
+      <div>
+        <p>Do you collect any of the following data sets?<br/>
+          1. Racial or ethnic origin.<br/>
+          2. Political opinions.<br/>
+          3. Religious or philosophical beliefs.<br/>
+          4. Trade union membership.<br/>
+          5. Genetic data.<br/>
+          6. Sexual orientation and related data.<br/>
+          7. Biometric data.<br/>
+          8. Marital status and family details<br/>
+          9. Physical or mental health or condition</p>
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      <hr/>
+
+      </div>
+      <div>
+        <p>We use personal data for marketing purposes </p>
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      <hr/>
+
+      </div>
+      <div>
+        <p>Canvassing political support among the electorate.<br/>
+          1. Crime prevention and prosecution of offenders (including operating security CCTV systems).<br/>
+          2. Gambling.<br/>
+          3. Operating an educational institution.<br/>
+          4. Health administration and provision of patient care.<br/>
+          5. Hospitality industry firms but excludes tour guides.<br/>
+          6. Property management including the selling of land.<br/>
+          7. Provision of financial services.<br/>
+          8. Telecommunications network or service providers.<br/>
+          9. Businesses that are wholly or mainly in direct marketing.<br/>
+          10.Transport services firms (including online passenger hailing applications)<br/>
+          11.Businesses that process genetic data.<br/>
+           the policy owner or a beneficiary. </p>
+        <input type="radio" id="html" name="seven" value="HTML">
+        <label for="html">HTML</label><br>
+        <input type="radio" id="css" name="seven" value="CSS">
+        <label for="css">CSS</label><br>
+        <input type="radio" id="javascript" name="seven" value="JavaScript">
+        <label for="javascript">JavaScript</label>
+      <hr/>
+
+      </div>
+     
+      
+      
+
+      <!-- footer -->
+      <footer id="main-footer" class="py-2">
+        <div class="container footer-container">
+          <div>
+            <img src="image_resources/logo_light1.png" alt="NewsGrid" />
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Ratione
+              facilis nisi, autem dolor quia eius odio sunt quo sint suscipit.
+            </p>
+          </div>
+          <div>
+            <h3>Email Newsletter</h3>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit.</p>
+            <form action="">
+              <input type="email" placeholder="Enter Email..." />
+              <input type="submit" value="subscribe" class="btn btn-primary" />
+            </form>
+          </div>
+          <div>
+            <h3>Site Links</h3>
+            <ul class="list">
+              <li><a href="#">Help & Support</a></li>
+              <li><a href="#">Privacy Policy</a></li>
+              <li><a href="#">About Us</a></li>
+              <li><a href="#">Contact</a></li>
+            </ul>
+          </div>
+          <div>
+            <h2>Join Our Club</h2>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Sequi, non.
+            </p>
+            <a href="" class="btn btn-secondary">Join Now</a>
+          </div>
+          <div>
+            <p>Copyright &copy; 2023, All Rights Reserved</p>
+          </div>
+        </div>
+      </footer>
+
+
+
+      <!--javascript internal functions-->
+
+      <script>
+        // When the user scrolls the page, execute myFunction 
+        window.onscroll = function() {myFunction()};
+        
+        function myFunction() {
+          var winScroll = document.body.scrollTop || document.documentElement.scrollTop;
+          var height = document.documentElement.scrollHeight - document.documentElement.clientHeight;
+          var scrolled = (winScroll / height) * 100;
+          document.getElementById("myBar").style.width = scrolled + "%";
+        }
+        </script>
+
+</body>
+</html>
